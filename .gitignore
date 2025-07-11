@@ -1,13 +1,11 @@
-# Dependencies
+# Node dependencies
 node_modules/
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
 
 # Expo
 .expo/
 dist/
 web-build/
+expo-env.d.ts
 
 # Native
 *.orig.*
@@ -20,23 +18,25 @@ web-build/
 # Metro
 .metro-health-check*
 
-# Debug
+# Debug/logs
 npm-debug.*
 yarn-debug.*
 yarn-error.*
+logs
+*.log
 
 # macOS
 .DS_Store
 *.pem
 
-# local env files
+# Local env files
 .env*.local
 .env
 
-# typescript
+# TypeScript
 *.tsbuildinfo
 
-# IDE
+# IDE/editor
 .vscode/
 .idea/
 *.swp
@@ -45,64 +45,37 @@ yarn-error.*
 # OS generated files
 Thumbs.db
 
-# Logs
-logs
-*.log
+# Temporary folders
+.tmp/
+tmp/
+temp/
 
-# Runtime data
-pids
-*.pid
-*.seed
-*.pid.lock
-
-# Coverage directory used by tools like istanbul
+# Coverage
 coverage/
-
-# nyc test coverage
 .nyc_output
 
-# Dependency directories
-jspm_packages/
-
-# Optional npm cache directory
+# Optional npm/yarn files
 .npm
+.yarn/cache
+.yarn/unplugged
+.yarn/build-state.yml
+.yarn/install-state.gz
+.yarn-integrity
+.pnp.*
 
-# Optional eslint cache
-.eslintcache
-
-# Microbundle cache
+# Misc
+.cache
+.parcel-cache
+.next
+.nuxt
+.out
+.storybook-out
 .rpt2_cache/
 .rts2_cache_cjs/
 .rts2_cache_es/
 .rts2_cache_umd/
-
-# Optional REPL history
 .node_repl_history
-
-# Output of 'npm pack'
 *.tgz
-
-# Yarn Integrity file
-.yarn-integrity
-
-# parcel-bundler cache (https://parceljs.org/)
-.cache
-.parcel-cache
-
-# Next.js build output
-.next
-
-# Nuxt.js build / generate output
-.nuxt
-dist
-
-# Storybook build outputs
-.out
-.storybook-out
-
-# Temporary folders
-tmp/
-temp/
 
 # Editor directories and files
 .vscode/*
@@ -123,12 +96,5 @@ temp/
 # TernJS port file
 .tern-port
 
-# Stores VSCode versions used for testing VSCode extensions
+# VSCode test
 .vscode-test
-
-# yarn v2
-.yarn/cache
-.yarn/unplugged
-.yarn/build-state.yml
-.yarn/install-state.gz
-.pnp.* 
